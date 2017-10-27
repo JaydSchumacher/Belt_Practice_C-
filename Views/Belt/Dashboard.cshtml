@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Hello "  + ViewBag.curUserName;
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<a href="logout">Logout</a>
+<table>
+    <th>Belt Name</th>
+    <th>Color</th>
+    <th>Description</th>
+    <th>Created By</th>
+    <tbody id="beltTable">
+        @{
+            foreach(var belt in ViewBag.belts){
+                <tr>
+                    <td>|<a href="/currentbelt/@belt.beltid">@belt.belt_name</a>       |</td>
+                    <td>|  @belt.color                        |</td>
+                    <td>|  @belt.description                  |</td>
+                    <td>|  @ViewBag.curUserName         |</td>
+                </tr>
+            }
+        }
+        
+    </tbody>
+</table>
+<br>
+<br>
+<br>
+<table>
+    <th>Belt Name</th>
+    <th>Color</th>
+    <th>Description</th>
+    <th>Created By</th>
+    <tbody id="beltTable">
+        @{
+            foreach(var belt in ViewBag.beltsachieved){
+                foreach(var mybelt in belt.BeltAchieved)
+                {
+                <tr>
+                    <td>|  @mybelt.Belt.belt_name     |</td>
+                    <td>|  @mybelt.Belt.color     |</td>
+                    <td>|  @mybelt.Belt.description  |</td>
+                    <td>|  @ViewBag.curUserName       |</td>
+                </tr>
+                }
+            }
+        }
+        
+    </tbody>
+</table>
+<br>
+<br>
+<br>
+
+<form action="newbelt" method="get">
+    <input type="submit" value="New Belt">
+</form>
+
+

@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Current Belt";
+}
+
+<div>
+    @{
+        if(@ViewBag.errors != null){
+            foreach(var error in @ViewBag.errors){
+                
+                <p>@error</p>
+                
+            }
+        }
+    }
+    
+</div>
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+@{
+if(ViewBag.curBelt != null){
+    foreach(var belt in ViewBag.curBelt){
+        <div>
+            @belt.users_id
+            @belt.belt_name
+            @belt.color
+            <form action="/completebelt" method="post">
+                <input type="hidden" name="beltid" value="@belt.beltid">
+                <label for="achieved_at">Date Completed: </label>
+                <input type="date" name="achieved_at"><br>
+                <input type="submit" name="submit" value="Add Completed Belt">
+            </form>
+        </div>
+    }
+}
+}

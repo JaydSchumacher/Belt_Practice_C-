@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div>
+    @{
+        if(@ViewBag.errors != null){
+            foreach(var error in @ViewBag.errors){
+                
+                <p>@error</p>
+                
+            }
+        }
+    }
+    
+</div>
+
+<h1>Login Page</h1>
+
+<div>
+    <h2>Register Here</h2>
+    <form action="register" method="post">
+        <input type="text" name="first_name" placeholder="First Name"><br>
+        <input type="text" name="last_name" placeholder="Last Name"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <input type="password" name="password" placeholder="Password"><br>
+        <input type="password" name="cpassword" placeholder="Confirm Password"><br>
+        <input type="submit" name="submit" value="Register">
+    </form>
+</div>
+<div>
+    <h2>Login Here</h2>
+    <form action="login" method="post">
+        <input type="text" name="email" placeholder="Email"><br>
+        <input type="password" name="password" placeholder="Password"><br>
+        <input type="submit" name="submit" value="Login">
+    </form>
+</div>

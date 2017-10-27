@@ -1,0 +1,8 @@
+C:\Users\Jayd's Laptop\Documents\CodingDojo\C#\WebApps\Belt_Exam\bin\Debug\netcoreapp1.1\Belt_Exam.deps.json
+C:\Users\Jayd's Laptop\Documents\CodingDojo\C#\WebApps\Belt_Exam\bin\Debug\netcoreapp1.1\Belt_Exam.runtimeconfig.json
+C:\Users\Jayd's Laptop\Documents\CodingDojo\C#\WebApps\Belt_Exam\bin\Debug\netcoreapp1.1\Belt_Exam.runtimeconfig.dev.json
+C:\Users\Jayd's Laptop\Documents\CodingDojo\C#\WebApps\Belt_Exam\obj\Debug\netcoreapp1.1\Belt_Exam.AssemblyInfo.cs
+C:\Users\Jayd's Laptop\Documents\CodingDojo\C#\WebApps\Belt_Exam\bin\Debug\netcoreapp1.1\Belt_Exam.dll
+C:\Users\Jayd's Laptop\Documents\CodingDojo\C#\WebApps\Belt_Exam\bin\Debug\netcoreapp1.1\Belt_Exam.pdb
+C:\Users\Jayd's Laptop\Documents\CodingDojo\C#\WebApps\Belt_Exam\obj\Debug\netcoreapp1.1\Belt_Exam.dll
+C:\Users\Jayd's Laptop\Documents\CodingDojo\C#\WebApps\Belt_Exam\obj\Debug\netcoreapp1.1\Belt_Exam.pdb

@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "New Belt";
+}
+
+<div>
+    @{
+        if(@ViewBag.errors != null){
+            foreach(var error in @ViewBag.errors){
+                
+                <p>@error</p>
+                
+            }
+        }
+    }
+    
+</div>
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+
+<div>
+    <form action="createbelt" method="post">
+        <label for="belt_name">Belt Name: </label>
+        <input type="text" name="belt_name"><br>
+        <label for="color">Color: </label>
+        <input type="text" name="color"><br>
+        <label for="description">Description: </label>
+        <input type="textarea" name="description"><br>
+        <input type="submit" name="submit" value="Create Belt">
+    </form>
+</div>
+
